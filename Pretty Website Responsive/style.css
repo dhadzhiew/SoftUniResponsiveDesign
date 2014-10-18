@@ -1,0 +1,239 @@
+*{
+    transition: all 0.3s ease;
+}
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial;
+    background: #000;
+}
+.wrapper{
+    max-width:900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header{
+    background: url('../resources/headerBackground.jpg') no-repeat;
+    width: 100%;
+    height: 270px;
+    text-align: right;
+}
+.header h2{
+    margin: 0px;
+    padding: 0px;
+    position:relative;
+    top: 210px;
+    right: 40px;
+    color: #fff;
+}
+.menu{
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #d9d9d9));;
+    background: linear-gradient(#efefef,#d9d9d9);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #fff;
+    font-size: 0;
+}
+.line{
+    background: #ebebeb;
+    height: 2px;
+    width: 100%;
+}
+.menu > li{
+    list-style: none;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 10px 0px 10px 0px;
+    width: 125px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #918f8d;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+.menu > li > a:hover{
+    background: linear-gradient(#bebebe,#b0b0b0) ;
+    color: #fff;
+}
+.main{
+    background: #fff;
+    max-width: 860px;
+    padding: 20px;
+}
+.main .left{
+    float:left;
+    max-width: 600px;
+}
+.main .left .article h1{
+    padding: 0px;
+    margin: 0px;
+    color: #9dcb48;
+}
+.main .left .article{
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.main .left .article .articleContent{
+    margin-top: 30px;
+}
+.clear{
+    clear: both;
+}
+.articleContent .product img{
+    float:left;
+    margin: 0px 10px 10px 0px;
+}
+.right{
+    float:right;
+    margin-right: 10px;
+}
+.news {
+    background: #eeeeee;
+    width: 160px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+}
+.news .new{
+    margin-top: 10px;
+}
+.right h1{
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    color: #9dcb48;
+}
+.right .date{
+    font-weight: bold;
+}
+.news a{
+    color: #9dcb48;
+}
+.messages{
+    margin-top: 20px;
+    border-radius: 10px ;
+    padding: 20px 20px 10px 20px;
+    border: 1px solid #e3e3e3;
+    width: 160px;
+}
+.messages a{
+    display: block;
+    margin-top: 10px;
+    color: #9dcb48;
+}
+.author span{
+    font-weight: bold;
+}
+.greenLine{
+    background: #bfe880 ;
+    border-top: 1px solid #b4e068;
+    border-bottom: 1px solid #b4e068;
+    width: 100%;
+    height: 1px;
+}
+.footer{
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a5d837), color-stop(100%, #8bc919));
+    background: linear-gradient(#a5d837,#8bc919);
+    border-bottom: 2px solid rgba(191,232,128,0.5);
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.footer p{
+    margin: 0px;
+    position: relative;
+    top: 30px;
+    padding-right: 10px;
+    left: 150px;
+}
+.footer p a{
+    color: #000;
+}
+
+.footer p a:hover{
+    text-decoration:none;
+}
+@media  all and (max-width: 700px){
+    .menu li a{
+        width: 90px;
+    }
+}
+
+@media  all and (max-width: 500px){
+
+    .menu li{
+        display: block;
+    }
+    .footer p{]
+        top: 10px;
+        left: 10px;
+        padding-right: 10px;
+    }
+    .menu li a{
+        width: 100%
+    }
+    .main .right{
+        padding:0px;
+        margin: 0px;
+        float:left;
+    }
+    .right > div{
+        float:left;
+        margin-left: 0px;
+        border:0;
+        border-top: 1px solid #e3e3e3;
+        border-radius: 0px;
+        width:100%;
+        padding: 5px;
+    }
+    .messages{
+        margin-top: 20px;
+    }
+    .main{
+        padding: 0px !important;
+    }
+    .main .left .article{
+        width: 95%;
+        padding: 5px;
+        border-radius: 0;
+        border:0;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .main .left{
+        padding: 0px !important;
+    }
+
+}
+@media  all and (max-width: 899px){
+    .main .left{
+        max-width: 95%;
+    }
+    .main{
+        padding: 10px 20px 0px 10px;
+    }
+    .right{
+        float: right;
+        width: 98%;
+    }
+    .article{
+        width: 100%;
+    }
+    .news {
+        float:left ;
+        width: 40%;
+    }
+    .messages{
+        width: 35%;
+        float:right;
+        margin: 0px 0px 20px 10px;
+    }
+}
